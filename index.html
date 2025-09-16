@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Mohammed - Technology Support Specialist & Developer</title>
+    <meta name="description" content="Portfolio of Ali Mohammed, Technology Support Specialist at Ticketmaster and Computer Science graduate specializing in web development and technical support.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Ali Mohammed</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#" class="nav-link download-cv" onclick="downloadCV()">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-accent">Ali Mohammed</span>
+                </h1>
+                <p class="hero-subtitle">Technology Support Specialist & Aspiring Developer</p>
+                <p class="hero-description">
+                    Experienced Technology Support Specialist at Ticketmaster with expertise in technical troubleshooting, 
+                    system support, and web development. Computer Science graduate passionate about live entertainment technology.
+                </p>
+                
+                <div class="hero-buttons">
+                    <!--<a href="#contact" class="btn btn-primary">Get In Touch</a>-->
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+                
+                <div class="hero-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ali.has2008@hotmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>07435411216</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>London, UK</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/alhanamo" target="_blank">linkedin.com/in/alhanamo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <!-- Modified grid structure to match v0 preview with 2-column layout -->
+            <div class="about-grid">
+                <div class="about-card about-summary">
+                    <h3>Professional Summary</h3>
+                    <p>
+                        Experienced Technology Support Specialist at Ticketmaster, expert in resolving technical issues and 
+                        providing exceptional client support. Proficient in leveraging tools such as Salesforce and Jira to manage 
+                        support tickets effectively. Demonstrated strengths in communication, facilitating smooth collaboration 
+                        across third-party and global teams. Driven by a passion for live entertainment, I am keen to further 
+                        contribute technical expertise and operational insights.
+                    </p>
+                </div>
+                
+                <div class="about-right">
+                    <div class="about-card">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Science, Computer Science</h4>
+                            <p class="institution">City, University of London</p>
+                            <p class="year">2023 • 1st Class Graduate</p>
+                        </div>
+                        <div class="education-item">
+                            <h4>A-Levels</h4>
+                            <p class="institution">Woolwich Polytechnic School</p>
+                            <p class="year">2020 • Maths (B), Psychology (B), Biology (C)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3>Languages</h3>
+                        <div class="languages">
+                            <span class="language-tag">English</span>
+                            <span class="language-tag">Arabic</span>
+                            <span class="language-tag">Somali</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="public/Student-Hostel.png" alt="Elite Dorms Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>Elite Dorms</h3>
+                        <p class="project-subtitle">Hostel Booking Web App</p>
+                        <p class="project-description">
+                            Comprehensive hostel booking platform enabling flexible bookings for students with user authentication and admin management panels.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>User login and registration system</li>
+                                <li>Admin panel for booking management</li>
+                                <li>Flexible booking options for students</li>
+                                <li>Responsive design for all devices</li>
+                            </ul>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary">View Demo</a>
+                            <a href="https://github.com/ali-mohammed2/Student-Hostel-Web-App" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="public/Estate.png" alt="Alhanamo Property Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>Alhanamo Property</h3>
+                        <p class="project-subtitle">Real Estate Web App</p>
+                        <p class="project-description">
+                            Responsive real estate platform simulating real-world property browsing with advanced search and filtering capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Property search and filtering system</li>
+                                <li>Responsive design for mobile and desktop</li>
+                                <li>Property details and image galleries</li>
+                                <li>Contact forms for property inquiries</li>
+                            </ul>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary">View Demo</a>
+                            <a href="https://github.com/ali-mohammed2/Alhanamo-Property---Real-Estate-Web-App" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="public/2d-game.png" alt="Vector 2.0 Game Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>Vector 2.0</h3>
+                        <p class="project-subtitle">Java 2D Game</p>
+                        <p class="project-description">
+                            Strategic multi-level 2D game requiring tactical movement to complete objectives while avoiding detection.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Java Swing</span>
+                            <span class="tech-tag">2D Graphics</span>
+                        </div>
+                        <div class="project-features">
+                            <ul>
+                                <li>Multi-level gameplay with increasing difficulty</li>
+                                <li>Strategic movement and stealth mechanics</li>
+                                <li>Objective-based mission system</li>
+                                <li>Custom 2D graphics and animations</li>
+                            </ul>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-primary">View Demo</a>
+                            <a href="https://github.com/ali-mohammed2/Java-2D-Game" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Technology Support Specialist</h3>
+                        <p class="company">Ticketmaster</p>
+                    </div>
+                    <div class="experience-meta">
+                        <span class="date">11/2023 – Present</span>
+                        <span class="location">London</span>
+                    </div>
+                </div>
+                
+                <div class="experience-content">
+                    <ul class="responsibilities">
+                        <li>Provided end-to-end technical support for Ticketmaster systems including proprietary software, hardware, and network devices across remote and live event environments.</li>
+                        <li>Supported the setup and maintenance of tools used by customer service agents, helping to ensure smooth operations and consistent fan experiences across platforms.</li>
+                        <li>Led collaborations with third-party providers and contractors, ensuring seamless continuity of service during live events.</li>
+                        <li>Utilised Salesforce and Jira to manage support workflows, track incidents, and maintain accurate documentation.</li>
+                        <li>Participated in regional system testing and software upgrades, reporting bugs and contributing feedback for improvements.</li>
+                        <li>Managed and monitored projects to ensure timely completion and alignment with business objectives.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">A comprehensive overview of my technical skills and professional competencies.</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <!-- Added icon to Programming Languages header -->
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Haskell</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <!-- Added icon to Technical Support header -->
+                    <h3><i class="fas fa-cogs"></i> Technical Support</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Technical Troubleshooting</span>
+                        <span class="skill-tag">Software & Hardware Support</span>
+                        <span class="skill-tag">API Integration</span>
+                        <span class="skill-tag">System Testing</span>
+                        <span class="skill-tag">Network Devices</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <!-- Added icon to Tools & Platforms header -->
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Salesforce</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Microsoft 365</span>
+                        <span class="skill-tag">Version Control</span>
+                        <span class="skill-tag">Testing Methodologies</span>
+                        <span class="skill-tag">User Training & Documentation</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <!-- Added icon to Soft Skills header -->
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Communication & Team Collaboration</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">User Training & Documentation</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <!-- Added icon to Professional Qualities header -->
+                    <h3><i class="fas fa-star"></i> Professional Qualities</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Handling Pressure</span>
+                        <span class="skill-tag">Adaptability</span>
+                        <span class="skill-tag">Eye for Accuracy</span>
+                        <span class="skill-tag">Code Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ali Mohammed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
